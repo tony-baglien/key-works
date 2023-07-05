@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Opal Essence",
+        "material": "ABS",
+        "profile": "OEM",
+        "legend": "Double-shot",
+        "compatibility": "Cherry MX",
+        "design": "Translucent",
+        "texture": "Smooth"
+    },
+    {
+        "name": "Stardust Dreams",
+        "material": "PBT",
+        "profile": "DSA",
+        "legend": "Dye-sublimation",
+        "compatibility": "MX-style",
+        "design": "Blank",
+        "texture": "Textured"
+    },
+    {
+        "name": "Moonlit Sonata",
+        "material": "POM",
+        "profile": "SA",
+        "legend": "Laser-etched",
+        "compatibility": "Topre",
+        "design": "Custom Artwork",
+        "texture": "Smooth"
+    },
+    {
+        "name": "Nebula Nebbia",
+        "material": "ABS",
+        "profile": "Cherry",
+        "legend": "Pad-printed",
+        "compatibility": "Alps",
+        "design": "Gradient",
+        "texture": "Smooth"
+    },
+    {
+        "name": "Enchanted Elixir",
+        "material": "POM",
+        "profile": "DSA",
+        "legend": "Laser-etched",
+        "compatibility": "Cherry MX",
+        "design": "Novelty",
+        "texture": "Smooth"
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Lunar Eclipse",
+        "keySwitches": [
+            {
+                "name": "Aurora Frost",
+                "switchType": "Mechanical"
+            },
+            {
+                "name": "Moonlit Sonata",
+                "switchType": "Mechanical"
+            },
+            {
+                "name": "Galaxy Aurora",
+                "switchType": "Mechanical"
+            }
+        ],
+        "keycaps": [
+            {
+                "name": "Opal Essence",
+                "material": "ABS"
+            }
+        ],
+        "case": "Aluminum",
+        "layout": "Full-size",
+        "backlighting": true
+    },
+    {
+        "name": "Solar Flare",
+        "keySwitches": [
+            {
+                "name": "Stardust Dreams",
+                "switchType": "Mechanical"
+            },
+            {
+                "name": "Enchanted Elixir",
+                "switchType": "Mechanical"
+            }
+        ],
+        "keycaps": [
+            {
+                "name": "Galaxy Aurora",
+                "material": "PBT"
+            }
+        ],
+        "case": "Plastic",
+        "layout": "Tenkeyless",
+        "backlighting": false
+    },
+    {
+        "name": "Nebula Mist",
+        "keySwitches": [
+            {
+                "name": "Opal Essence",
+                "switchType": "Mechanical"
+            },
+            {
+                "name": "Nebula Nebbia",
+                "switchType": "Mechanical"
+            }
+        ],
+        "keycaps": [
+            {
+                "name": "Stardust Dreams",
+                "material": "PBT"
+            }
+        ],
+        "case": "Acrylic",
+        "layout": "60%",
+        "backlighting": true
+    }
+]

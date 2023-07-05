@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Aurora Frost",
+        "actuationForce": "45g",
+        "actuationPoint": "2mm",
+        "travelDistance": "4mm",
+        "tactility": "Linear",
+        "sound": "Quiet",
+        "durability": "50 million keystrokes",
+        "switchType": "Mechanical"
+    },
+    {
+        "name": "Spectra Jade",
+        "actuationForce": "55g",
+        "actuationPoint": "2.2mm",
+        "travelDistance": "4mm",
+        "tactility": "Tactile",
+        "sound": "Quiet",
+        "durability": "50 million keystrokes",
+        "switchType": "Mechanical"
+    },
+    {
+        "name": "Moonstone Sky",
+        "actuationForce": "45g",
+        "actuationPoint": "1.8mm",
+        "travelDistance": "3.6mm",
+        "tactility": "Clicky",
+        "sound": "Moderate",
+        "durability": "80 million keystrokes",
+        "switchType": "Mechanical"
+    },
+    {
+        "name": "Celestial Zenith",
+        "actuationForce": "65g",
+        "actuationPoint": "1.5mm",
+        "travelDistance": "3.5mm",
+        "tactility": "Tactile",
+        "sound": "Quiet",
+        "durability": "100 million keystrokes",
+        "switchType": "Mechanical"
+    },
+    {
+        "name": "Ethereal Serenade",
+        "actuationForce": "55g",
+        "actuationPoint": "1.5mm",
+        "travelDistance": "4mm",
+        "tactility": "Tactile",
+        "sound": "Quiet",
+        "durability": "30 million keystrokes",
+        "switchType": "Electrostatic Capacitive"
+    },
+    {
+        "name": "Radiant Ember",
+        "actuationForce": "60g",
+        "actuationPoint": "2.4mm",
+        "travelDistance": "4mm",
+        "tactility": "Tactile",
+        "sound": "Loud",
+        "durability": "50-100 million keystrokes",
+        "switchType": "Mechanical"
+    },
+    {
+        "name": "Luminous Mist",
+        "actuationForce": "67g",
+        "actuationPoint": "2mm",
+        "travelDistance": "4mm",
+        "tactility": "Tactile",
+        "sound": "Moderate",
+        "durability": "Unknown",
+        "switchType": "Mechanical"
+    }
+]
