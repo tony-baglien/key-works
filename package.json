@@ -2,10 +2,12 @@
     "name": "keyworks_backend",
     "version": "1.0.0",
     "description": "backend for keyworks website",
-    "main": "app.js",
+    "main": "dist/main.js",
+    "source": "app.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "nodemon server.js"
+        "start": "nodemon server.js",
+        "build": "parcel build"
     },
     "repository": {
         "type": "git",
@@ -25,6 +27,7 @@
         "mongodb": "^5.6.0",
         "mongoose": "^7.3.1",
         "nodemon": "^2.0.22",
-        "ora": "^6.3.1"
+        "ora": "^6.3.1",
+        "parcel": "^2.10.0"
     }
 }
