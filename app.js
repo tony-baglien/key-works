@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 //ROUTERS
 const keycapRouter = require("./routers/keycapRouter");
 const keyswitchRouter = require("./routers/keyswitchRouter");
@@ -11,6 +12,11 @@ app.use((req, res, next) => {
     console.log(req.requestTime);
     next();
 });
+app.use(
+    cors({
+        origin: "*",
+    })
+);
 
 //API ROUTES
 app.use("/api/v1/keycaps", keycapRouter);
