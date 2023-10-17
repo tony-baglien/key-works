@@ -255,14 +255,14 @@ $84a264530b3fb4fb$var$app.use("/api/v1/fullbuilds", $9bcceecfed209758$exports);
 $84a264530b3fb4fb$exports = $84a264530b3fb4fb$var$app;
 
 
-$bdTtH$dotenv.config({
-    path: "./config.env"
-});
-const $2685e5b20c9f29f6$var$DB = undefined.replace("<PASSWORD>", undefined);
+$bdTtH$dotenv.config();
+let $2685e5b20c9f29f6$var$db = "mongodb+srv://tonibaglien:<PASSWORD>@keyworks.6iojnvs.mongodb.net/?retryWrites=true&w=majority";
+let $2685e5b20c9f29f6$var$dbpw = "o7YRf7sLvKOBZayP";
+const $2685e5b20c9f29f6$var$DB = $2685e5b20c9f29f6$var$db.replace("<PASSWORD>", $2685e5b20c9f29f6$var$dbpw);
 $bdTtH$mongoose.connect($2685e5b20c9f29f6$var$DB).then((con)=>{
     console.log("connected to database!");
 });
-const $2685e5b20c9f29f6$var$port = 3000;
+const $2685e5b20c9f29f6$var$port = "8008";
 $84a264530b3fb4fb$exports.listen($2685e5b20c9f29f6$var$port, ()=>{
     console.log(`Listening on port ${$2685e5b20c9f29f6$var$port}`);
 });
