@@ -1,14 +1,18 @@
-var $hDP3I$express = require("express");
-var $hDP3I$cors = require("cors");
-var $hDP3I$mongoose = require("mongoose");
+var $bdTtH$dotenv = require("dotenv");
+var $bdTtH$mongoose = require("mongoose");
+var $bdTtH$express = require("express");
+var $bdTtH$cors = require("cors");
 
+
+
+var $84a264530b3fb4fb$exports = {};
 
 
 var $a7ba91d74de65be3$exports = {};
 
 var $1a4022318fbf89ac$exports = {};
 
-const $1a4022318fbf89ac$var$keycapsSchema = new $hDP3I$mongoose.Schema({
+const $1a4022318fbf89ac$var$keycapsSchema = new $bdTtH$mongoose.Schema({
     name: {
         type: String
     },
@@ -31,7 +35,7 @@ const $1a4022318fbf89ac$var$keycapsSchema = new $hDP3I$mongoose.Schema({
         type: String
     }
 });
-const $1a4022318fbf89ac$var$Tour = $hDP3I$mongoose.model("Keycaps", $1a4022318fbf89ac$var$keycapsSchema);
+const $1a4022318fbf89ac$var$Tour = $bdTtH$mongoose.model("Keycaps", $1a4022318fbf89ac$var$keycapsSchema);
 $1a4022318fbf89ac$exports = $1a4022318fbf89ac$var$Tour;
 
 
@@ -61,7 +65,7 @@ class $1663c8bfb6a7d7c6$var$APIFeatures {
 $1663c8bfb6a7d7c6$exports = $1663c8bfb6a7d7c6$var$APIFeatures;
 
 
-let $a7ba91d74de65be3$var$router = $hDP3I$express.Router();
+let $a7ba91d74de65be3$var$router = $bdTtH$express.Router();
 const $a7ba91d74de65be3$var$getAllKeycaps = async (req, res)=>{
     try {
         //filtering
@@ -98,7 +102,7 @@ var $20522c158ca49668$exports = {};
 
 var $ca542f5d2e70e274$exports = {};
 
-const $ca542f5d2e70e274$var$keyswitchesSchema = $hDP3I$mongoose.Schema({
+const $ca542f5d2e70e274$var$keyswitchesSchema = $bdTtH$mongoose.Schema({
     name: {
         type: String
     },
@@ -127,12 +131,12 @@ const $ca542f5d2e70e274$var$keyswitchesSchema = $hDP3I$mongoose.Schema({
         type: String
     }
 });
-const $ca542f5d2e70e274$var$Tour = $hDP3I$mongoose.model("Keyswitches", $ca542f5d2e70e274$var$keyswitchesSchema);
+const $ca542f5d2e70e274$var$Tour = $bdTtH$mongoose.model("Keyswitches", $ca542f5d2e70e274$var$keyswitchesSchema);
 $ca542f5d2e70e274$exports = $ca542f5d2e70e274$var$Tour;
 
 
 
-let $20522c158ca49668$var$router = $hDP3I$express.Router();
+let $20522c158ca49668$var$router = $bdTtH$express.Router();
 const $20522c158ca49668$var$getAllKeySwitches = async (req, res)=>{
     try {
         //filtering
@@ -169,7 +173,7 @@ var $9bcceecfed209758$exports = {};
 
 var $108e5f2022792aa7$exports = {};
 
-const $108e5f2022792aa7$var$fullBuildSchema = $hDP3I$mongoose.Schema({
+const $108e5f2022792aa7$var$fullBuildSchema = $bdTtH$mongoose.Schema({
     name: {
         type: String
     },
@@ -197,12 +201,12 @@ const $108e5f2022792aa7$var$fullBuildSchema = $hDP3I$mongoose.Schema({
     layout: String,
     backlighting: Boolean
 });
-const $108e5f2022792aa7$var$Tour = $hDP3I$mongoose.model("FullBuild", $108e5f2022792aa7$var$fullBuildSchema);
+const $108e5f2022792aa7$var$Tour = $bdTtH$mongoose.model("FullBuild", $108e5f2022792aa7$var$fullBuildSchema);
 $108e5f2022792aa7$exports = $108e5f2022792aa7$var$Tour;
 
 
 
-let $9bcceecfed209758$var$router = $hDP3I$express.Router();
+let $9bcceecfed209758$var$router = $bdTtH$express.Router();
 const $9bcceecfed209758$var$getAllBuildKits = async (req, res)=>{
     try {
         //filtering
@@ -235,20 +239,33 @@ $9bcceecfed209758$var$router.route("/:id").get($9bcceecfed209758$var$getBuildKit
 $9bcceecfed209758$exports = $9bcceecfed209758$var$router;
 
 
-const $84a264530b3fb4fb$var$app = $hDP3I$express();
+const $84a264530b3fb4fb$var$app = $bdTtH$express();
 $84a264530b3fb4fb$var$app.use((req, res, next)=>{
     req.requestTime = new Date().toISOString();
     console.log(req.requestTime);
     next();
 });
-$84a264530b3fb4fb$var$app.use($hDP3I$cors({
+$84a264530b3fb4fb$var$app.use($bdTtH$cors({
     origin: "*"
 }));
 //API ROUTES
 $84a264530b3fb4fb$var$app.use("/api/v1/keycaps", $a7ba91d74de65be3$exports);
 $84a264530b3fb4fb$var$app.use("/api/v1/keyswitches", $20522c158ca49668$exports);
 $84a264530b3fb4fb$var$app.use("/api/v1/fullbuilds", $9bcceecfed209758$exports);
-module.exports = $84a264530b3fb4fb$var$app;
+$84a264530b3fb4fb$exports = $84a264530b3fb4fb$var$app;
+
+
+$bdTtH$dotenv.config({
+    path: "./config.env"
+});
+const $2685e5b20c9f29f6$var$DB = undefined.replace("<PASSWORD>", undefined);
+$bdTtH$mongoose.connect($2685e5b20c9f29f6$var$DB).then((con)=>{
+    console.log("connected to database!");
+});
+const $2685e5b20c9f29f6$var$port = 3000;
+$84a264530b3fb4fb$exports.listen($2685e5b20c9f29f6$var$port, ()=>{
+    console.log(`Listening on port ${$2685e5b20c9f29f6$var$port}`);
+});
 
 
 //# sourceMappingURL=main.js.map
