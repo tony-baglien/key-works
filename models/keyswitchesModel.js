@@ -28,6 +28,15 @@ const keyswitchesSchema = mongoose.Schema({
     switchType: {
         type: String,
     },
+    price: {
+        type: Number,
+        default: 100
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now(),
+        select: false
+    }
 });
 
 const Tour = mongoose.model("Keyswitches", keyswitchesSchema);

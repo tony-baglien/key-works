@@ -22,6 +22,15 @@ const keycapsSchema = new mongoose.Schema({
     texture: {
         type: String,
     },
+    price: {
+        type: Number,
+        default: 100
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now(),
+        select: false
+    }
 });
 
 const Tour = mongoose.model("Keycaps", keycapsSchema);

@@ -6,7 +6,7 @@ const FullBuilds = require("../models/fullBuildsModel");
 const fs = require("fs");
 
 //Connect to mongoDB
-dotEnv.config({ path: "../config.env" });
+dotEnv.config({ path: "../.env" });
 
 const DB = process.env.DATABASE.replace(
     "<PASSWORD>",
@@ -16,7 +16,7 @@ const DB = process.env.DATABASE.replace(
 mongoose.connect(DB).then((con) => {
     console.log("connected to database!");
 });
-C;
+
 const keycaps = JSON.parse(
     fs.readFileSync(`${__dirname}/keycaps.json`, "utf-8")
 );

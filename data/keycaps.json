@@ -1,6 +1,5 @@
 [
     {
-        "id": "0",
         "name": "Opal Essence",
         "material": "ABS",
         "profile": "OEM",
@@ -10,7 +9,6 @@
         "texture": "Smooth"
     },
     {
-        "id": "1",
         "name": "Stardust Dreams",
         "material": "PBT",
         "profile": "DSA",
@@ -20,7 +18,6 @@
         "texture": "Textured"
     },
     {
-        "id": "2",
         "name": "Moonlit Sonata",
         "material": "POM",
         "profile": "SA",
@@ -30,7 +27,6 @@
         "texture": "Smooth"
     },
     {
-        "id": "3",
         "name": "Nebula Nebbia",
         "material": "ABS",
         "profile": "Cherry",
@@ -40,7 +36,6 @@
         "texture": "Smooth"
     },
     {
-        "id": "4",
         "name": "Enchanted Elixir",
         "material": "POM",
         "profile": "DSA",

@@ -4,6 +4,15 @@ const fullBuildSchema = mongoose.Schema({
     name: {
         type: String,
     },
+    price: {
+        type: Number,
+        default: 100
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now(),
+        select: false
+    },
     keySwitches: [
         {
             name: String,
