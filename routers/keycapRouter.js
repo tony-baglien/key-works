@@ -12,7 +12,6 @@ const getAllKeycaps = async (req, res) => {
         const features = new APIFeatures(Keycaps.find(), req.query)
             .filter()
             .sort();
-
         const keycaps = await features.query;
 
 
